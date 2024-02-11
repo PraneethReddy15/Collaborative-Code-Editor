@@ -1,0 +1,79 @@
+.FilesTab {
+    background-color: #1e1e1e; /* Background color of the FilesTab */
+    color: #d4d4d4; /* Text color */  
+    padding: 10px; /* Padding for better appearance */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    overflow-y: auto;
+    height: 89vh;
+
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin between input and fileList */
+}
+
+.fileInput {
+    background-color: #f1ecec; /* Background color of the input box */
+    color: #282222; /* Text color */
+    border: 1px solid #444; /* Border around input box */
+    padding: 8px; /* Padding for better appearance */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 17px; /* Font size */
+    flex: 1; /* Take remaining space */
+    margin-right: 10px; /* Add margin between input and submit button */
+}
+
+.addButton {
+    background:none;
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 4px; /* Padding for better appearance */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 20px; /* Font size */
+}
+
+.addButton:hover {
+    border-radius:50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+}
+
+#active{
+    background-color: #e0e6df;
+    color: black;
+    font-size: large;
+}
+
+.fileList {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px; /* Adjust the maximum width of the file list container as needed */
+    /* overflow: hidden; Hide overflow if filenames exceed the container width */
+}
+
+.fileItem {
+    background-color: #333; /* Background color of the file item */
+    color: #d4d4d4; /* Text color */
+    border: 1px solid #444; /* Border around file item */
+    padding: 10px; /* Padding for better appearance */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin-bottom: 5px; /* Add margin between file items */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long filenames */
+}
+.fileItem:hover {
+    background-color: #444; /* Lighter background color on hover */
+    white-space: normal; /* Allow full filename to be displayed in multiple lines on hover */
+    overflow: visible; /* Show overflowing text */
+    width: auto; /* Allow the width to expand */
+}
+
+

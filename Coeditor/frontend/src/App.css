@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+}
+
+.iconBtn {
+  margin: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  background: none;
+  font-size: 40px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+
+.iconBtn::after {
+  content: "";
+  width: 4px;
+  height: 0px;
+  background: #021c31;
+  position: absolute;
+  left: -6px;
+  bottom: 0px;
+  transition: 0.7s;
+}
+
+.iconBtn:hover::after {
+  height: 100%;
+}
+
+.iconBtn:hover {
+  color: #021c31;
+}
+
+/* <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet"> */
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  display: flex;
+  flex: 1;
+  /* This makes .Content container take up remaining space */
+}
+
+.Coeditor {
+  flex-grow: 1;
+  /* This makes .Coeditor occupy remaining space */
+  /* You can remove width property as flex-grow will handle the width */
+
+  padding: 20px;
+}
+
+.Coeditor {
+  position: relative;
+  /* Setting position relative to enable absolute positioning of ChatBox */
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  /* Arrange ChatBox and MainEditor side by side */
+}
+
+.MainEditor {
+  flex-grow: 1;
+  /* MainEditor expands to fill remaining space */
+}
+
+.Content {
+  position: relative;
+  /* Ensure relative positioning for absolute positioning within */
+}
+
+.ChatBoxButton {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 40px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ChatBoxButton:hover {
+  background-color: #0056b3;
+  /* Darker shade for hover effect */
+}
+
+
+body {
+  padding: 0;
+}

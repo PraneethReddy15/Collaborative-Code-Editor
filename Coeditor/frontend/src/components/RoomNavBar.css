@@ -1,0 +1,162 @@
+.RoomNavBar {
+	background-color: #030610;
+	color: #0750a9;
+	padding: 18px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title {
+	font-size: 30px;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+	/* Gap between buttons */
+}
+
+/* New styles for RoomNavBar */
+.RoomNavBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.title,
+.buttons {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	justify-content: flex-start;
+	padding-left: 20px;
+}
+
+.buttons {
+	justify-content: flex-end;
+	padding-right: 20px;
+}
+
+
+/* CSS */
+.button {
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+.button {
+	font-size: 16px;
+	padding: 0.6em 2em;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background: #E19898;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button:active {
+	animation: click 0.3s;
+}
+
+@keyframes click {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.9);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.button:before {
+	content: "";
+	background: linear-gradient(45deg,
+			#db3232,
+			#c8691b,
+			#c6c43c,
+			#5bca2f,
+			#00ffd5,
+			#32449b,
+			#9253d4,
+			#ff00c8,
+			#ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	-webkit-filter: blur(1px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.button:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #131417;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+.navbar-logo {
+	text-decoration: none;
+	color: #AED2FF;
+
+}
+
+.leaveBtn {
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	animation: none;
+	background-color: #f02a2a;
+	transition: transform 0.7s;
+	box-shadow: 2px 2px rgb(26, 22, 22);
+}
+
+.leaveBtn:hover {
+	transform: translateY(-2px);
+	background-color: red;
+	box-shadow: none;
+}

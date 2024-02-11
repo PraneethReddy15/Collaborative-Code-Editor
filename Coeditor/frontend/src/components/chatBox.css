@@ -1,0 +1,76 @@
+.ChatBox {
+  position: fixed;
+  bottom: 60px; /* Adjust this value as needed */
+  right: 40px; /* Adjust this value as needed */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  background-color: #131417; /* Example background color */
+  border: 1px solid #ccc;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for hover effect */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+  height: 75vh;
+  width: 25vw;
+}
+
+.ChatBox:hover {
+  transform: translateY(-5px); /* Move the ChatBox up slightly on hover */
+}
+.chat-components{
+  display: flex;
+  flex-direction:row;
+  align-items:flex-end ;
+  justify-content: end;
+  margin-top: 10vh;
+
+}
+.input-message{
+  width: 100%;
+  border-radius: 4px;
+  height: 35px;
+  padding-left: 3px;
+  border:3px solid rgb(164, 157, 157);
+}
+.send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  background: #0056b3;
+  border-radius:5px;
+  margin-left: 5px;
+}
+button.send-btn:hover {
+  color:rgb(22, 22, 24);
+  background-color:#f2f4f4 ;
+} 
+.sent {
+  text-align: right;
+  background-color: #d1e7dd; /* Light green */
+  color: #000; /* Black text */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.received {
+  text-align: left;
+  background-color: #f8d7da; /* Light red */
+  color: #000; /* Black text */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.ChatBox ul {
+  height: 55vh; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+.sent small, .received small {
+  color: #777; /* change this to a color that is visible on your background */
+  font-size: 0.8em;
+}

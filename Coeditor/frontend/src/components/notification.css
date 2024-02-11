@@ -1,0 +1,37 @@
+/* body
+{
+  background: #03183a;
+} */
+.container{
+    z-index: 10;  
+    position: absolute;  
+    right: 70px;  
+    top: 120px;
+    animation-name: slide-right;
+    animation-duration: 4s;
+}
+ 
+  @keyframes slide-right {
+    from {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: 100px;
+    }
+    to {
+      margin-left: 200px;
+    }
+  }
+
+.alert-simple.alert-success
+{
+  border: 1px solid rgba(36, 241, 6, 0.46);
+    background-color: #5dbea3;
+    box-shadow: 0px 0px 2px #259c08;
+    color: #131413;
+    border-radius: 10px;
+    transition:0.5s;
+    padding: 20px;
+    cursor:pointer;
+    font-size: 20px;
+}

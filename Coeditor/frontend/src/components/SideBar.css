@@ -1,0 +1,29 @@
+/* .item{
+    background-color: lightblue;
+} */
+
+
+.SideBar{
+    background-color: #3e3e42;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+/* .SBItem{
+    background-color: yellow;
+} */
+
+.Intro{
+    background-color: hsl(212, 87%, 46%);
+    color: white;
+    min-height: 40px;
+    min-width: 80px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Intro:hover{
+    color: #131417;
+}

@@ -1,0 +1,32 @@
+.ShowPeople{
+    z-index: 1000;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    background-color: rgb(67, 63, 63);
+    height:60vh;
+    border-radius: 10px;
+    /* padding: 1px; */
+    overflow:auto;
+}
+.currUsers-div{
+    background-color: rgb(67, 63, 63);
+    padding:10px;
+    margin-bottom:20px;
+}
+.listItem{
+    list-style-type:none;
+    background-color: rgb(67, 63, 63);
+    color: #fff;
+    line-height: 30px;
+    padding: 3px;
+}
+.listItem:hover{
+    background-color: #282222;
+    color: #e3d6d6;
+    border-radius: 10px;
+    padding-left: 3px;
+
+}
+.mainList{
+}
